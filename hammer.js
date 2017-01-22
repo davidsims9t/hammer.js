@@ -1562,10 +1562,10 @@ var TouchAction = function () {
       var direction = input.offsetDirection;
 
       // if the touch action did prevented once this session
-      if (this.manager.session.prevented) {
-        srcEvent.preventDefault();
-        return;
-      }
+//       if (this.manager.session.prevented) {
+//         srcEvent.preventDefault();
+//         return;
+//       }
 
       var actions = this.actions;
 
@@ -1603,8 +1603,8 @@ var TouchAction = function () {
   }, {
     key: 'preventSrc',
     value: function preventSrc(srcEvent) {
-      this.manager.session.prevented = true;
-      srcEvent.preventDefault();
+//       this.manager.session.prevented = true;
+//       srcEvent.preventDefault();
     }
   }]);
   return TouchAction;
